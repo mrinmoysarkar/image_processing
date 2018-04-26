@@ -90,7 +90,7 @@ while hasFrame(v)
     imshow(bgimg)
     subplot(224)
     imshow(abs(img-bgimg))
-    pause(0.01)
+    %pause(0.01)
 end
 
 %% reconstruct the image
