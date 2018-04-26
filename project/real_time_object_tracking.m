@@ -6,12 +6,12 @@ close all;
 
 
 %% initialize parameters
-M = 128;
-N = 128;
+M = 5;
+N = 5;
 K = 3;
 totalPixel = M*N;
 maxPixelval = 255;
-inintSig = 5;
+inintSig = 50;
 
 mu = randi(maxPixelval,totalPixel,K);
 sig = inintSig*ones(totalPixel,K);
@@ -40,7 +40,7 @@ b = img(:,:,3);
 
 X = [r(:) g(:) b(:)];
 
-for ite = 1:1
+for ite = 1:15000
     X = double(X);
     for i=1:totalPixel
         flag = 1;
