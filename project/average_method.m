@@ -3,7 +3,6 @@ close all;
 
 v = VideoReader('car1.m4v');
 figure
-frameno = 1;
 video = readFrame(v);
 
 M=240;
