@@ -1,12 +1,12 @@
 clear all;
 close all;
 
-v = VideoReader('car1.m4v');
+v = VideoReader('car-perspective-3-hires.m4v');
 figure
 video = readFrame(v);
+M = size(video,1);
+N = size(video,2);
 
-M=240;
-N=320;
 windowlen=50;
 th = 50;
 oldImg = zeros(M,N,3,windowlen);
